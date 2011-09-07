@@ -1,0 +1,1 @@
+This is a small library that allows you to optimize away performance costs when using reflection in .net 3.5 systems.
