@@ -16,7 +16,6 @@ namespace FastReflection
             InstanceType = instanceType;
             PropertyType = propertyType;
             Setter = setter;
-            throw new NotImplementedException();
         }
 
         public void Set(object instance, object value)
