@@ -44,6 +44,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FactoryTests\ArgumentValidationSpecs.cs" />
+    <Compile Include="FactoryTests\CreationSpecs.cs" />
     <Compile Include="GetterTests\TypeCheckingSpecs.cs" />
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\Cat.cs" />
@@ -51,7 +53,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="FactoryTests\" />
     <Folder Include="SetterTests\" />
   </ItemGroup>
   <ItemGroup>

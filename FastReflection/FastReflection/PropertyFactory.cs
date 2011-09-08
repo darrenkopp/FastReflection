@@ -16,14 +16,21 @@ namespace FastReflection
 
         internal static IFastProperty Create(Type type, string path)
         {
+            if (type == null)
+                throw new ArgumentNullException("type", "The type was not specified.");
+
+            if (string.IsNullOrEmpty(path))
+                throw new ArgumentException("Path was not specified.","path");
+
             var key = new CacheKey(type, path);
             lock (locker)
             {
                 IFastProperty property;
-                if (Cache.TryGetValue(key, out property))
+                if (!Cache.TryGetValue(key, out property))
                 {
                     // create property
-                    Cache[key] = Make(type, path);
+                    property = Make(type, path);
+                    Cache[key] = property;
                 }
 
                 return property;

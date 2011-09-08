@@ -41,6 +41,7 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ExtensionMethods.cs" />
     <Compile Include="FastGetter.cs" />
     <Compile Include="FastProperty.cs" />
     <Compile Include="FastSetter.cs" />
