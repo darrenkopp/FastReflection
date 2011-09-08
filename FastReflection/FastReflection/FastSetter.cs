@@ -23,7 +23,7 @@ namespace FastReflection
             if (!InstanceType.IsAssignableFrom(instance.GetType()))
                 throw new InvalidOperationException("The instance is not not an instance or derived instance of " + InstanceType.FullName);
 
-            if (!PropertyType.IsAssignableFrom(value.GetType()))
+            if (value != null && !PropertyType.IsAssignableFrom(value.GetType()))
                 throw new InvalidOperationException("The value is not an instance or derived instance of " + PropertyType.FullName);
 
             Setter(instance, value);

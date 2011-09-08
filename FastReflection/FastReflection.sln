@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastReflection", "FastReflection\FastReflection.csproj", "{20DA2805-2AE9-41E8-AE71-07896E438E57}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FastReflection.Tests", "FastReflection.Tests\FastReflection.Tests.csproj", "{FA0CDBEE-5389-4FE9-A9A8-18979160523D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,6 +15,10 @@ Global
 		{20DA2805-2AE9-41E8-AE71-07896E438E57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{20DA2805-2AE9-41E8-AE71-07896E438E57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{20DA2805-2AE9-41E8-AE71-07896E438E57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA0CDBEE-5389-4FE9-A9A8-18979160523D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA0CDBEE-5389-4FE9-A9A8-18979160523D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA0CDBEE-5389-4FE9-A9A8-18979160523D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA0CDBEE-5389-4FE9-A9A8-18979160523D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

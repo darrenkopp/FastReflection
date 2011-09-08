@@ -30,16 +30,31 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>..\FastReflection.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="FastGetter.cs" />
+    <Compile Include="FastProperty.cs" />
+    <Compile Include="FastSetter.cs" />
     <Compile Include="IFastGetter.cs" />
     <Compile Include="IFastProperty.cs" />
     <Compile Include="IFastSetter.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PropertyFactory.cs" />
+    <Compile Include="TestingAttribute.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\FastReflection.snk">
+      <Link>FastReflection.snk</Link>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -19,7 +19,7 @@ namespace FastReflection
         public object Get(object instance)
         {
             // check to make sure object is ok type
-            if (InstanceType.IsAssignableFrom(instance.GetType()))
+            if (!InstanceType.IsAssignableFrom(instance.GetType()))
                 throw new InvalidOperationException("The instance is not not an instance or derived instance of " + InstanceType.FullName);
 
             return Getter(instance);
