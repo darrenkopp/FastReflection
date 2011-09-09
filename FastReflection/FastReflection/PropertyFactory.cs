@@ -77,7 +77,7 @@ namespace FastReflection
             // convert object parameter to type of the property
             var cast = Expression.Convert(value, target.PropertyType);
             // call set method on final property
-            expression = Expression.Call(instance, target.GetSetMethod(), cast);
+            expression = Expression.Call(expression, target.GetSetMethod(), cast);
 
             return new FastSetter(origin, target.PropertyType, Expression.Lambda<Action<object,object>>(expression, instance, value).Compile());
         }
