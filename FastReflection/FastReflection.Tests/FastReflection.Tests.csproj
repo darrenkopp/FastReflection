@@ -49,6 +49,7 @@
     <Compile Include="GetterTests\TypeCheckingSpecs.cs" />
     <Compile Include="Models\Animal.cs" />
     <Compile Include="Models\Cat.cs" />
+    <Compile Include="Models\Color.cs" />
     <Compile Include="Models\Lion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
